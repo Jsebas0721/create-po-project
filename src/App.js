@@ -59,7 +59,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://10.1.0.25:3009")
+    fetch("http://10.1.0.25:3009")
       .then((resp) => resp.json())
       .then((data) => setData(data));
       
